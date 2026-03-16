@@ -1,4 +1,4 @@
-\d .kraken
+
 
 norm.name:{
     if[`ticker=x;:`KrakenTicker];
