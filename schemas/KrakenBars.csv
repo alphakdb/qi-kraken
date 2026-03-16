@@ -1,0 +1,11 @@
+time,p
+sym,s
+open,f
+high,f
+low,f
+close,f
+trades,j
+volume,f
+vwap,f
+bar,p
+interval,j
