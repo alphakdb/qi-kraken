@@ -9,3 +9,5 @@ volume,f
 vwap,f
 bar,p
 interval,j
+feedtime,p
+tptime,p

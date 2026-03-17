@@ -11,3 +11,5 @@ low,f
 high,f
 change,f
 change_pct,f
+feedtime,p
+tptime,p

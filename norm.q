@@ -19,7 +19,9 @@ norm.ticker:{
             d`low;
             d`high;
             d`change;
-            d`change_pct)
+            d`change_pct;
+            .z.p;
+            0Np)
     }
 
 norm.ohlc:{
@@ -36,5 +38,7 @@ norm.ohlc:{
                 d`volume;
                 d`vwap;
                 d`interval_begin;
-                "j"$d[`interval])
+                "j"$d[`interval];
+                .z.p;
+                0Np)
     }
