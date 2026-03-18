@@ -19,11 +19,11 @@ payload:getParams each $[0=type CHANNEL;CHANNEL;enlist CHANNEL]
 TD:`ohlc`ticker!`KrakenBars`KrakenTicker
 
 msg.status:{[x]
-    .qi.info"qi.kraken: Status received. System is ",first x[`data]`system;
+    .qi.info"Kraken: Status received. System is ",first x[`data]`system;
     neg[.z.w] each .j.j each payload
     }
 
-msg.data:{[ch;data] .feed.upd[TD ch;norm[ch]data]}
+msg.data:{[ch;data] .feed.upd[TD ch;norm[ch]$[99h=type data;enlist data;data]]}
 
 .z.ws:{
     pkg:.j.k x;
